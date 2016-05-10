@@ -63,10 +63,10 @@ unsigned char ps2sim_oddparity(unsigned char buffer) {
     return parity;
 }
 
-void ps2sim_setdata(unsigned char value) {
+static void ps2sim_setdata(unsigned char value) {
   *data_pin ^= (-value ^ *data_pin) & (1 << data_bit);
 }
 
-void ps2sim_setclock(unsigned char value) {
+static void ps2sim_setclock(unsigned char value) {
   *clock_pin ^= (-value ^ *clock_pin) & (1 << clock_bit);
 }
