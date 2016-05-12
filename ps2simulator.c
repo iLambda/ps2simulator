@@ -24,7 +24,7 @@ void ps2sim_send(unsigned char buffer) {
   i = 0;
   while (i < 8) {
     // set clock up
-    ps2sim_setdata(buffer & (1 << i));
+    ps2sim_setdata(buffer & (1 << (7 - i)));
     ps2sim_setclock(1);
     delay_us(CLOCK_LENGTH_2);
     // down
