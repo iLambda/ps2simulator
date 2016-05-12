@@ -22,9 +22,3 @@ void ps2sim_send(unsigned char buffer);
 ```
 Send a message to the PS/2 output. Its duration is 2\*10\*CLOCK_LENGTH_2.
 **CLOCK_LENGTH_2** is defined at line 4 of ps2simulator.h.
-
-#### ps2sim_oddparity
-```c
-unsigned char ps2sim_oddparity(unsigned char buffer);
-```
-Returns 1 iff the argument has odd parity.
