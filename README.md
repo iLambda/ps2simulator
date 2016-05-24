@@ -22,3 +22,5 @@ void ps2sim_send(unsigned char buffer);
 ```
 Send a message to the PS/2 output. Its duration is 2\*10\*CLOCK_LENGTH_2.
 **CLOCK_LENGTH_2** is defined at line 4 of ps2simulator.h.
+
+A list of keycodes be found [here](http://www.computer-engineering.org/ps2keyboard/scancodes2.html).
